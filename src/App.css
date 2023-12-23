@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px solid;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  background: #eee;
+}
+
+.squares-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.square {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.red {
+  background-color: #ff3d57
+}
+
+.green {
+  background-color: #63E1A2;
+}
+
+.blue {
+  background-color: #5577d1;
+}
+
+.yellow {
+  background-color: #dfa83b;
+}
+
+
+.submit-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #5577d1;
+  border-radius: 10px;
+  min-height: 80vh;
+  min-width: 80vw;
+  color: white
+
+}
+
+.submit-text {
+  font-size: 5vw;
+}
+
+.submit-buttons  {
+  width: 10%;
+  height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 15px;
+  border:#5577d1 solid
+}
+
+.submit-buttons:focus {
+  background-color: #63E1A2;
+}
+
+.incrementButton {
+  font-size: 100px;
+}
+
+.health {
+  font-size: 140px;
+  z-index: -1;
+}
+
+.health-button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: solid 0px;
+
+}
+
+.player {
+
+  box-sizing: border-box;
+}
+
+.health-button:focus {
+  background-color: #eee !important;
+  opacity: 0.5;
+  border: 0px solid;
+  outline: none;
+}
